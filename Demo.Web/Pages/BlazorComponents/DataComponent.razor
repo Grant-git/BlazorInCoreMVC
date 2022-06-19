@@ -1,0 +1,13 @@
+﻿@code{
+    [Parameter]  
+    public string Title { get; set; } 
+}
+<h3>@Title</h3>
+
+
+@foreach(var item in Items){   
+
+    <p>Name : @item.Name</p>
+    <p>Address : @item.Address</p>
+}
+
